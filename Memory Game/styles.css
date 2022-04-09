@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 26.5%;
+    margin: 50px auto;
+}
+
+h2{
+    /* margin-top: 0; */
+    font-family: cursive;
+    font-size: 35px;
+}

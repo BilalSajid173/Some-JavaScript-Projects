@@ -1,0 +1,206 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  /* padding: 3% 15%; */
+  background-color: rgb(37, 48, 48);
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  display: inline-block;
+}
+
+h1 {
+  color: beige;
+  /* margin-top: 0;
+  margin-bottom: 40px; */
+  text-decoration: underline;
+}
+
+/*****************************************TEXT AREA*************************************/
+
+.input-field {
+  color: transparent; /*used to hide the cursor*/
+  text-shadow: 0 0 0 #608caf; /*used to hide the cursor*/
+  width: 97.5%;
+  background-color: rgb(65, 36, 36);
+  padding: 5px;
+  margin: 10px 0;
+  text-align: right;
+  font-size: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: 0;
+  /*box shadow things*/
+  -moz-box-shadow: 0 0 10px rgb(136, 99, 99);
+  -webkit-box-shadow: 0 0 10px rgb(145, 101, 101);
+  box-shadow: 0 0 10px rgb(150, 108, 108);
+}
+
+/****************************************DIVISIONS*************************************/
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  background-color: rgb(58, 37, 37);
+  border-radius: 15px;
+  -moz-box-shadow: 0 0 10px rgb(110, 60, 60);
+  -webkit-box-shadow: 0 0 10px rgb(121, 70, 70);
+  box-shadow: 0 0 10px rgb(121, 61, 61);
+}
+
+.wifi-div {
+  text-align: right;
+  height: 30px;
+  background-color: rgb(58, 37, 37);
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 10%;
+  color: white;
+}
+
+/***************************************ALL BUTTONS*****************************************/
+
+.btn {
+  height: 50px;
+  width: 60px;
+  border-radius: 50%;
+  border: 0;
+  box-shadow: 2px 2px 2px rgb(109, 79, 79);
+  margin: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(65, 56, 9);
+}
+
+.clear {
+  background-color: rgb(75, 31, 13);
+}
+
+.operator {
+  background-color: rgb(24, 17, 71);
+}
+
+.number {
+  background-color: rgb(22, 58, 58);
+}
+
+.equal {
+  height: 50px;
+  width: 100px;
+  border-radius: 25px;
+  background-color: rgb(25, 25, 70);
+}
+
+/************************************Light Mode effects*****************************/
+
+.h1-change {
+  color: black;
+}
+
+.light-bg {
+  background-color: #c1f4c5;
+}
+
+.input-change {
+  text-shadow: 0 0 0 rgb(48, 35, 35);
+  background-color: #ffe4c0;
+  -moz-box-shadow: 0 0 10px rgb(46, 17, 17);
+  -webkit-box-shadow: 0 0 10px rgb(56, 13, 13);
+  box-shadow: 0 0 10px rgb(61, 26, 26);
+}
+
+.main-div-change {
+  background-color: #b8ad91;
+  -moz-box-shadow: 0 0 10px rgb(46, 17, 17);
+  -webkit-box-shadow: 0 0 10px rgb(56, 13, 13);
+  box-shadow: 0 0 10px rgb(61, 26, 26);
+}
+
+.wifi-div-change {
+  background-color: #b8ad91;
+  color: black;
+}
+
+.btn-change {
+  background-color: #eca6a6;
+  box-shadow: 2px 2px 2px #495371;
+  color: black;
+}
+
+.operator-change {
+  background-color: #42c2ff;
+}
+
+.clear-change {
+  background-color: #fdffa9;
+}
+
+.btn-change:hover {
+  background-color: #dff6ff;
+}
+
+/***********************************Media Queries************************************/
+
+@media (max-width: 700px) {
+  .btn {
+    height: 45px;
+    width: 50px;
+    font-size: 20px;
+    margin: 3px;
+  }
+
+  .equal {
+    height: 40px;
+    width: 80px;
+    border-radius: 25px;
+  }
+
+  .main-div {
+    width: 250px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .btn {
+    height: 37px;
+    width: 42px;
+    font-size: 13px;
+    margin: 2px;
+  }
+
+  .equal {
+    height: 30px;
+    width: 60px;
+    border-radius: 25px;
+  }
+
+  .main-div {
+    width: 200px;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+}
